@@ -341,7 +341,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <div class="block">Gets the total number of times that the word appears in the document.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>word</code> - the word to search for</dd>
+<dd><code>word</code> - : the word to search for</dd>
 <dt>Returns:</dt>
 <dd>count: the number of times a specified word appears</dd>
 </dl>
@@ -366,7 +366,8 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <div class="block">Manually set the word count of a word</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>A</code> - string denoting the desired word count to be set; a key to the value of word count to be altered</dd>
+<dd><code>word</code> - : A string denoting the desired word count to be set; a key to the value of word count to be altered</dd>
+<dd><code>count</code> - : An integer number denoting the desired frequency of the set word</dd>
 </dl>
 </section>
 </li>
@@ -377,7 +378,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <div class="block">Manually set the word count of many words at once</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>A</code> - map denoting the desired words and counts to be set</dd>
+<dd><code>newCounts</code> - : A map denoting the desired words and counts to be set</dd>
 </dl>
 </section>
 </li>
@@ -389,7 +390,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
  Clears all map elements that aren't contained in the vocabulary</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>An</code> - existing vocabulary</dd>
+<dd><code>newVocab</code> - : An existing vocabulary</dd>
 </dl>
 </section>
 </li>
@@ -400,7 +401,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <div class="block">Adds a new word to the documentSignature's wordVector</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>newWord</code> - word to be added to the wordVector</dd>
+<dd><code>newWord</code> - : A word to be added to the wordVector</dd>
 </dl>
 </section>
 </li>
@@ -411,7 +412,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <div class="block">Add all of the words in the collection to the map</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>A</code> - collection of strings to add to the signature</dd>
+<dd><code>words</code> - : A collection of strings (words) to add to the signature</dd>
 </dl>
 </section>
 </li>
@@ -422,36 +423,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <div class="block">Add all of the words in the vocabulary to the map</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>An</code> - existing vocabulary</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="equals(java.lang.Object)">
-<h3>equals</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;obj)</span></div>
-<div class="block">Compares two documentSignatures for equality. They are considered equal if
- their getWord() values are equal (for now).
- NOTE: Later this will have to be their words AND word counts to be equal</div>
-<dl class="notes">
-<dt>Overrides:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></dd>
-<dt>Parameters:</dt>
-<dd><code>obj</code> - object to be compared for equality with this signature</dd>
-<dt>Returns:</dt>
-<dd><tt>true</tt> if the specified object is equal to this one</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="empty()">
-<h3>empty</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">empty</span>()</div>
-<div class="block">Check if the signature is empty
-        i.e. if it contains no words</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>true iff empty</dd>
+<dd><code>newVocab</code> - : An existing vocabulary</dd>
 </dl>
 </section>
 </li>
@@ -465,12 +437,49 @@ implements <a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base
 <section class="detail" id="getStopWords()">
 <h3>getStopWords</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/ArrayList.html" title="class or interface in java.util" class="external-link">ArrayList</a>&lt;<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">getStopWords</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A list of stop words</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removingWordsFromDocSig(java.util.HashMap)">
 <h3>removingWordsFromDocSig</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</span>&nbsp;<span class="element-name">removingWordsFromDocSig</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/HashMap.html" title="class or interface in java.util" class="external-link">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;hMap)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>hMap</code> - : A hash map of input stop words</dd>
+<dt>Returns:</dt>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="equals(java.lang.Object)">
+<h3>equals</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;obj)</span></div>
+<div class="block">Compares two documentSignatures for equality.
+ Signatures are considered equal if their wordFrequency mappings are equivalent.</div>
+<dl class="notes">
+<dt>Overrides:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>obj</code> - : object to be compared for equality with this signature</dd>
+<dt>Returns:</dt>
+<dd>true if the specified object is equal to this one</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="empty()">
+<h3>empty</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">empty</span>()</div>
+<div class="block">Check if the signature is empty
+        i.e. if it contains no words</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true iff empty</dd>
+</dl>
 </section>
 </li>
 </ul>
