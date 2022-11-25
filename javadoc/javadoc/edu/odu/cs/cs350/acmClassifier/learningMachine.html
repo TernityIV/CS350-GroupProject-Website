@@ -6,15 +6,16 @@
 <title>learningMachine (project API)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="../../../../../jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="../../../../../script.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -26,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -149,7 +150,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <ul class="blockList">
 <li class="blockList">
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.summary">
 <!--   -->
@@ -185,7 +186,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </ul>
 </section>
 <!-- ========== METHOD SUMMARY =========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.summary">
 <!--   -->
@@ -202,53 +203,73 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deleteTraining()">deleteTraining</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Deletes the associated training file if it exists</div>
+<div class="block">Deletes the associated training file if it exists.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deleteTraining(java.lang.String)">deleteTraining</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
+<td class="colLast">
+<div class="block">Sets the training data location to the one specified, then deletes the training file if it exists.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Compare two learning machines for equivalence</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="textDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">textDocument</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDocument()">getDocument</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the associated text document</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileLocation()">getFileLocation</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the current file location</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="documentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">documentSignature</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSignature()">getSignature</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the associated document signature</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html?is-external=true" title="class or interface in java.util" class="externalLink">Queue</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html?is-external=true" title="class or interface in java.util" class="externalLink">SortedSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html?is-external=true" title="class or interface in java.lang" class="externalLink">Character</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTraining()">getTraining</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the associated saved training data for this learning machine</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVocabulary()">getVocabulary</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Gets the associated vocabulary</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readTraining()">readTraining</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Reads the associated output training file (located at outputFileLocation)
-  and puts the contents into the private member savedTraining.</div>
+<div class="block">Reads the associated output training file (located at outputFileLocation).</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readTraining(java.lang.String)">readTraining</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
+<td class="colLast">
+<div class="block">Reads the associated output training file (located at outputFileLocation).</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(edu.odu.cs.cs350.acmClassifier.textDocument)">setDocument</a></span>&#8203;(<a href="textDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">textDocument</a>&nbsp;doc)</code></th>
 <td class="colLast">
@@ -256,7 +277,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
   used for training or otherwise.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(java.lang.String)">setDocument</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;doc)</code></th>
 <td class="colLast">
@@ -264,28 +285,28 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
   used for training or otherwise.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrainingDataLocation(java.lang.String)">setTrainingDataLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets a new location for the training data file</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVocabularyLocation(java.lang.String)">setVocabularyLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets a new location for the vocabulary file</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Overrides default toString function for more useful printing.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
 <td class="colLast">
@@ -293,7 +314,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
  Uses an already associated text document, setting its labels</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String,java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation,
      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
@@ -302,11 +323,18 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
  Should be called by the train script at the command line</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write()">write</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Writes the associated documentSignature to the output training data file.</div>
+<div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(java.lang.String)">write</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
+<td class="colLast">
+<div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 </td>
 </tr>
 </table>
@@ -327,7 +355,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <ul class="blockList">
 <li class="blockList">
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="constructor.detail">
 <!--   -->
@@ -376,7 +404,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </ul>
 </section>
 <!-- ============ METHOD DETAIL ========== -->
-<section role="region">
+<section>
 <ul class="blockList">
 <li class="blockList"><a id="method.detail">
 <!--   -->
@@ -421,6 +449,20 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>string containing the current file location</dd>
+</dl>
+</li>
+</ul>
+<a id="getVocabulary()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVocabulary</h4>
+<pre class="methodSignature">public&nbsp;<a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a>&nbsp;getVocabulary()</pre>
+<div class="block">Gets the associated vocabulary</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The vocabulary associated with this learningMachine</dd>
 </dl>
 </li>
 </ul>
@@ -504,9 +546,25 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <h4>write</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;write()
            throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
-<div class="block">Writes the associated documentSignature to the output training data file.
- If there is existing data in the file, append to it.</div>
+<div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 <dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="write(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>write</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;write&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)
+           throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
+<div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fileLocation</code> - - The desired output file location as a string</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
 </dl>
@@ -520,8 +578,27 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <h4>deleteTraining</h4>
 <pre class="methodSignature">public final&nbsp;boolean&nbsp;deleteTraining()
                              throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang" class="externalLink">SecurityException</a></pre>
-<div class="block">Deletes the associated training file if it exists</div>
+<div class="block">Deletes the associated training file if it exists.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true iff the file was deleted</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang" class="externalLink">SecurityException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="deleteTraining(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deleteTraining</h4>
+<pre class="methodSignature">public final&nbsp;boolean&nbsp;deleteTraining&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)
+                             throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang" class="externalLink">SecurityException</a></pre>
+<div class="block">Sets the training data location to the one specified, then deletes the training file if it exists.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fileLocation</code> - - The location of the training data to be deleted.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true iff the file was deleted</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -536,9 +613,10 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <li class="blockList">
 <h4>readTraining</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;readTraining()
-                  throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
-<div class="block">Reads the associated output training file (located at outputFileLocation)
-  and puts the contents into the private member savedTraining.
+                  throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a>,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ClassNotFoundException</a></pre>
+<div class="block">Reads the associated output training file (located at outputFileLocation).
+ The contents are deserialized into the current learningMachine instance.
   
  savedTraining contains a map of:
   - (Key) The signature contained in the file in the form of numbers separated by spaces.
@@ -548,6 +626,33 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ClassNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="readTraining(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readTraining</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;readTraining&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)
+                  throws <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a>,
+                         <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ClassNotFoundException</a></pre>
+<div class="block">Reads the associated output training file (located at outputFileLocation).
+ The contents are deserialized into the current learningMachine instance.
+  
+ savedTraining contains a map of:
+  - (Key) The signature contained in the file in the form of numbers separated by spaces.
+  - (Value) The read label(s) at the end of the signature 
+     in the form of a sorted set of characters,
+     each a label associated with the signature.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fileLocation</code> - - The location of the training data to be read</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassNotFoundException.html?is-external=true" title="class or interface in java.lang" class="externalLink">ClassNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>

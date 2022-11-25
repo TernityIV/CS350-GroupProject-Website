@@ -6,15 +6,16 @@
 <title>Index (project API)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="stylesheet.css" title="Style">
-<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css" title="Style">
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css" title="Style">
+<link rel="stylesheet" type="text/css" href="jquery-ui.overrides.css" title="Style">
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="jquery/jszip/dist/jszip.min.js"></script>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils.min.js"></script>
 <!--[if IE]>
 <script type="text/javascript" src="jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="jquery/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
 </head>
 <body>
 <script type="text/javascript"><!--
@@ -119,7 +120,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#deleteTraining()">deleteTraining()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
 <dd>
-<div class="block">Deletes the associated training file if it exists</div>
+<div class="block">Deletes the associated training file if it exists.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#deleteTraining(java.lang.String)">deleteTraining(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
+<dd>
+<div class="block">Sets the training data location to the one specified, then deletes the training file if it exists.</div>
 </dd>
 <dt><a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier"><span class="typeNameLink">documentSignature</span></a> - Class in <a href="edu/odu/cs/cs350/acmClassifier/package-summary.html">edu.odu.cs.cs350.acmClassifier</a></dt>
 <dd>
@@ -224,6 +229,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Gets the associated vocabulary of known words</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#getVocabulary()">getVocabulary()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
+<dd>
+<div class="block">Gets the associated vocabulary</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html#getWeights()">getWeights()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">documentSignature</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html#getWords()">getWords()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">documentSignature</a></dt>
@@ -320,8 +329,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#readTraining()">readTraining()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
 <dd>
-<div class="block">Reads the associated output training file (located at outputFileLocation)
-  and puts the contents into the private member savedTraining.</div>
+<div class="block">Reads the associated output training file (located at outputFileLocation).</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#readTraining(java.lang.String)">readTraining(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
+<dd>
+<div class="block">Reads the associated output training file (located at outputFileLocation).</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html#removingWordsFromDocSig(java.util.HashMap)">removingWordsFromDocSig(HashMap&lt;String, Integer&gt;)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/documentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">documentSignature</a></dt>
 <dd>&nbsp;</dd>
@@ -459,7 +471,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#write()">write()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
 <dd>
-<div class="block">Writes the associated documentSignature to the output training data file.</div>
+<div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html#write(java.lang.String)">write(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/learningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">learningMachine</a></dt>
+<dd>
+<div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 </dd>
 </dl>
 <a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
