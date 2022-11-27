@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.39.0" timestamp="2022-11-26T16:49:27.938">
-<file name="C:\Users\Justin\AppData\Roaming\SPB_Data\git\CS350-GroupProject\project\src\main\java\edu\odu\cs\cs350\acmClassifier\DocumentSignature.java">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.39.0" timestamp="2022-11-27T03:43:41.167">
+<file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/DocumentSignature.java">
 <violation beginline="37" endline="37" begincolumn="35" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" variable="wordFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.39.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
@@ -74,7 +74,7 @@ Public method and constructor comments are required
 Potential violation of Law of Demeter (method chain calls)
 </violation>
 </file>
-<file name="C:\Users\Justin\AppData\Roaming\SPB_Data\git\CS350-GroupProject\project\src\main\java\edu\odu\cs\cs350\acmClassifier\LearningMachine.java">
+<file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/LearningMachine.java">
 <violation beginline="16" endline="440" begincolumn="54" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.39.0/pmd_rules_java_design.html#toomanymethods" priority="3">
 This class has too many methods, consider refactoring it.
 </violation>
@@ -172,7 +172,7 @@ Potential violation of Law of Demeter (object not created locally)
 Potential violation of Law of Demeter (static property access)
 </violation>
 </file>
-<file name="C:\Users\Justin\AppData\Roaming\SPB_Data\git\CS350-GroupProject\project\src\main\java\edu\odu\cs\cs350\acmClassifier\Librarian.java">
+<file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/Librarian.java">
 <violation beginline="33" endline="33" begincolumn="39" endcolumn="41" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="Librarian" variable="SVM" externalInfoUrl="https://pmd.github.io/pmd-6.39.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'SVM' could be made final; it is only initialized in the declaration or constructor.
 </violation>
@@ -183,7 +183,7 @@ Found non-transient, non-static member. Please mark as transient or provide acce
 Found 'DU'-anomaly for variable 'lib' (lines '143'-'158').
 </violation>
 </file>
-<file name="C:\Users\Justin\AppData\Roaming\SPB_Data\git\CS350-GroupProject\project\src\main\java\edu\odu\cs\cs350\acmClassifier\TextDocument.java">
+<file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/TextDocument.java">
 <violation beginline="31" endline="31" begincolumn="17" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="location" externalInfoUrl="https://pmd.github.io/pmd-6.39.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
@@ -287,7 +287,7 @@ Use equals() to compare strings instead of '==' or '!='
 Use opposite operator instead of the logic complement operator.
 </violation>
 </file>
-<file name="C:\Users\Justin\AppData\Roaming\SPB_Data\git\CS350-GroupProject\project\src\main\java\edu\odu\cs\cs350\acmClassifier\Vocabulary.java">
+<file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/Vocabulary.java">
 <violation beginline="7" endline="211" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.39.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 Class comments are required
 </violation>
