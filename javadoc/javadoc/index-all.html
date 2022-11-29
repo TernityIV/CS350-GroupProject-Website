@@ -91,7 +91,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </nav>
 </header>
 <main role="main">
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a><a id="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a><a id="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -164,6 +164,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#equals(java.lang.Object)">equals(Object)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
 <dd>
 <div class="block">Compare two textDocuments for equivalency</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#equals(java.lang.Object)">equals(Object)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
+<dd>
+<div class="block">Compares two vocabularies for equivalency</div>
 </dd>
 </dl>
 <a id="I:G">
@@ -239,11 +243,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Gets the associated vocabulary</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#getVocabulary()">getVocabulary()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getWeights()">getWeights()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getWords()">getWords()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
 <dd>
 <div class="block">Gets the words in the signature.</div>
+</dd>
+</dl>
+<a id="I:H">
+<!--   -->
+</a>
+<h2 class="title">H</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#hashCode()">hashCode()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
+<dd>
+<div class="block">Overrides the hashcode function for vocabulary</div>
 </dd>
 </dl>
 <a id="I:I">
@@ -399,7 +415,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets a new location for the training data file</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#setVocabulary(java.lang.String)">setVocabulary(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the vocabulary file for the document to add to</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#setVocabularyLocation(java.lang.String)">setVocabularyLocation(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
 <div class="block">Sets a new location for the vocabulary file</div>
@@ -507,7 +525,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
+<a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
 </main>
 <footer role="contentinfo">
 <nav role="navigation">
