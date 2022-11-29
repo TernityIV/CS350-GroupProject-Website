@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-11-28T18:35:55.941">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-11-29T05:52:34.860">
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/DocumentSignature.java">
-<violation beginline="17" endline="374" begincolumn="56" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+<violation beginline="17" endline="376" begincolumn="56" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
 This class has too many methods, consider refactoring it.
 </violation>
 <violation beginline="38" endline="38" begincolumn="35" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" variable="wordFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
@@ -46,25 +46,25 @@ Public method and constructor comments are required
 <violation beginline="234" endline="243" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="setAll" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="290" endline="292" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="addAll" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="292" endline="294" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="addAll" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="295" endline="297" begincolumn="9" endcolumn="2" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="incorporateVocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="297" endline="299" begincolumn="9" endcolumn="2" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="incorporateVocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 Public method and constructor comments are required
 </violation>
-<violation beginline="311" endline="326" begincolumn="16" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="storeCommonWords" variable="separator" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'separator' (lines '311'-'326').
+<violation beginline="313" endline="328" begincolumn="16" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="storeCommonWords" variable="separator" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'separator' (lines '313'-'328').
 </violation>
-<violation beginline="318" endline="318" begincolumn="20" endcolumn="56" rule="AssignmentInOperand" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="storeCommonWords" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#assignmentinoperand" priority="3">
+<violation beginline="320" endline="320" begincolumn="20" endcolumn="56" rule="AssignmentInOperand" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="storeCommonWords" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#assignmentinoperand" priority="3">
 Avoid assignments in operands
 </violation>
-<violation beginline="318" endline="326" begincolumn="20" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="storeCommonWords" variable="CurrentLine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'CurrentLine' (lines '318'-'326').
+<violation beginline="320" endline="328" begincolumn="20" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="storeCommonWords" variable="CurrentLine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'CurrentLine' (lines '320'-'328').
 </violation>
-<violation beginline="336" endline="336" begincolumn="3" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="removeStopWords" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="338" endline="338" begincolumn="3" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="removeStopWords" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="354" endline="354" begincolumn="17" endcolumn="34" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
+<violation beginline="356" endline="356" begincolumn="17" endcolumn="34" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
 Ensure you override both equals() and hashCode()
 </violation>
 </file>
@@ -279,7 +279,7 @@ Use opposite operator instead of the logic complement operator.
 </violation>
 </file>
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/Vocabulary.java">
-<violation beginline="7" endline="211" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="7" endline="224" begincolumn="8" endcolumn="1" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 Class comments are required
 </violation>
 <violation beginline="23" endline="23" begincolumn="28" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" variable="dictionary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
@@ -288,16 +288,22 @@ Found non-transient, non-static member. Please mark as transient or provide acce
 <violation beginline="23" endline="23" begincolumn="28" endcolumn="37" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" variable="dictionary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'dictionary' could be made final; it is only initialized in the declaration or constructor.
 </violation>
-<violation beginline="62" endline="62" begincolumn="3" endcolumn="27" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+<violation beginline="43" endline="43" begincolumn="4" endcolumn="13" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'readFile' called during object construction
+</violation>
+<violation beginline="67" endline="67" begincolumn="3" endcolumn="27" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
 Overridable method 'setFileLocation' called during object construction
 </violation>
-<violation beginline="128" endline="128" begincolumn="18" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="readFile" variable="DocRead" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="69" endline="69" begincolumn="4" endcolumn="13" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="Vocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+Overridable method 'readFile' called during object construction
+</violation>
+<violation beginline="139" endline="139" begincolumn="18" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="readFile" variable="DocRead" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileReader object are closed after use
 </violation>
-<violation beginline="171" endline="171" begincolumn="15" endcolumn="25" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="updateFile" variable="writeToFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="182" endline="182" begincolumn="15" endcolumn="25" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="updateFile" variable="writeToFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileWriter object are closed after use
 </violation>
-<violation beginline="190" endline="191" begincolumn="3" endcolumn="15" rule="SimplifyBooleanReturns" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="isInDictionary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#simplifybooleanreturns" priority="3">
+<violation beginline="203" endline="204" begincolumn="3" endcolumn="15" rule="SimplifyBooleanReturns" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="Vocabulary" method="isInDictionary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#simplifybooleanreturns" priority="3">
 Avoid unnecessary if..then..else statements when returning booleans
 </violation>
 </file>
