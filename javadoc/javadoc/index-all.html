@@ -203,6 +203,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#getLabels()">getLabels()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/StopWords.html#getList()">getList()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/StopWords.html" title="class in edu.odu.cs.cs350.acmClassifier">StopWords</a></dt>
+<dd>
+<div class="block">Returns the currently associated stopwords.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getMapping()">getMapping()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
 <dd>
 <div class="block">Gets the hash map signature.</div>
@@ -215,10 +219,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#getSignature()">getSignature()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getStopWords()">getStopWords()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
-<dd>
-<div class="block">Returns the currently associated stopwords.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#getSVM()">getSVM()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
 <dd>
 <div class="block">Return the LearningMachine associated with this Librarian instance.</div>
@@ -303,6 +303,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Construct a new librarian based upon an existing training data file.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/StopWords.html#load()">load()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/StopWords.html" title="class in edu.odu.cs.cs350.acmClassifier">StopWords</a></dt>
+<dd>
+<div class="block">Reads and Stores the most common English words
+ into the program from a text file.</div>
+</dd>
 </dl>
 <a id="I:M">
 <!--   -->
@@ -348,7 +353,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Reads the associated output training file (located at outputFileLocation).</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#removeStopWords(java.util.HashMap)">removeStopWords(HashMap&lt;String, Integer&gt;)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#removeStopWords()">removeStopWords()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
 <dd>
 <div class="block">Removes words from hashmap that are contained in the
   associated common words list.</div>
@@ -399,11 +404,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Sets a new location for the vocabulary file</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#storeCommonWords()">storeCommonWords()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
-<dd>
-<div class="block">Reads and Stores the most common English words
- into the program from a text file.</div>
-</dd>
+<dt><a href="edu/odu/cs/cs350/acmClassifier/StopWords.html" title="class in edu.odu.cs.cs350.acmClassifier"><span class="typeNameLink">StopWords</span></a> - Class in <a href="edu/odu/cs/cs350/acmClassifier/package-summary.html">edu.odu.cs.cs350.acmClassifier</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/StopWords.html#%3Cinit%3E()">StopWords()</a></span> - Constructor for class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/StopWords.html" title="class in edu.odu.cs.cs350.acmClassifier">StopWords</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a id="I:T">
 <!--   -->
