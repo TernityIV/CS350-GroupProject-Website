@@ -414,13 +414,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Sets a new location for the training data file</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#setVocabulary(java.lang.String)">setVocabulary(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#setVocabulary(edu.odu.cs.cs350.acmClassifier.Vocabulary)">setVocabulary(Vocabulary)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
-<div class="block">Sets the vocabulary file for the document to add to</div>
+<div class="block">Sets a new vocabulary using a shallow copy</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#setVocabulary(edu.odu.cs.cs350.acmClassifier.Vocabulary)">setVocabulary(Vocabulary)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#setVocabularyLocation(java.lang.String)">setVocabularyLocation(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
 <div class="block">Sets a new location for the vocabulary file</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#setVocabularyLocation(java.lang.String)">setVocabularyLocation(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
+<dd>
+<div class="block">Sets the vocabulary file for the document to add to</div>
 </dd>
 <dt><a href="edu/odu/cs/cs350/acmClassifier/StopWords.html" title="class in edu.odu.cs.cs350.acmClassifier"><span class="typeNameLink">StopWords</span></a> - Class in <a href="edu/odu/cs/cs350/acmClassifier/package-summary.html">edu.odu.cs.cs350.acmClassifier</a></dt>
 <dd>&nbsp;</dd>
@@ -485,6 +491,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Update the vocabulary file to be saved for future use</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#updateVocabulary()">updateVocabulary()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
+<dd>
+<div class="block">Update the vocabulary of the learning machine with any new words encountered in a document</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#updateVocabulary(java.util.Vector)">updateVocabulary(Vector&lt;String&gt;)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
 <dd>
 <div class="block">Add words that haven't been seen before to the vocabulary</div>
@@ -500,6 +510,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#%3Cinit%3E()">Vocabulary()</a></span> - Constructor for class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
 <dd>
 <div class="block">Default constructor</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#%3Cinit%3E(edu.odu.cs.cs350.acmClassifier.Vocabulary)">Vocabulary(Vocabulary)</a></span> - Constructor for class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
+<dd>
+<div class="block">Copy constructor</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#%3Cinit%3E(java.lang.String)">Vocabulary(String)</a></span> - Constructor for class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
 <dd>
