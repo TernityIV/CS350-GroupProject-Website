@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-11-29T23:42:42.925">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-11-30T00:33:48.261">
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/DocumentSignature.java">
 <violation beginline="17" endline="324" begincolumn="56" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
 This class has too many methods, consider refactoring it.
@@ -7,7 +7,7 @@ This class has too many methods, consider refactoring it.
 <violation beginline="23" endline="23" begincolumn="17" endcolumn="54" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 Field comments are required
 </violation>
-<violation beginline="39" endline="39" begincolumn="35" endcolumn="47" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" variable="wordFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="39" endline="39" begincolumn="34" endcolumn="46" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" variable="wordFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
 <violation beginline="45" endline="45" begincolumn="21" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" variable="vocab" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
@@ -22,13 +22,13 @@ Overridable method 'addAll' called during object construction
 <violation beginline="68" endline="68" begincolumn="3" endcolumn="18" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="DocumentSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
 Overridable method 'addAll' called during object construction
 </violation>
-<violation beginline="165" endline="165" begincolumn="10" endcolumn="74" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getTotalFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="165" endline="165" begincolumn="10" endcolumn="79" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getTotalFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="165" endline="165" begincolumn="10" endcolumn="74" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getTotalFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="165" endline="165" begincolumn="10" endcolumn="79" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getTotalFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="165" endline="165" begincolumn="10" endcolumn="74" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getTotalFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="165" endline="165" begincolumn="10" endcolumn="79" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getTotalFrequency" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
 <violation beginline="168" endline="176" begincolumn="9" endcolumn="2" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" method="getWeights" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
@@ -63,7 +63,7 @@ Found non-transient, non-static member. Please mark as transient or provide acce
 <violation beginline="53" endline="53" begincolumn="21" endcolumn="25" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" variable="vocab" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="71" endline="71" begincolumn="56" endcolumn="68" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" variable="savedTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="71" endline="71" begincolumn="55" endcolumn="67" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" variable="savedTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
 <violation beginline="107" endline="107" begincolumn="5" endcolumn="18" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
@@ -207,10 +207,10 @@ Found non-transient, non-static member. Please mark as transient or provide acce
 <violation beginline="51" endline="51" begincolumn="23" endcolumn="35" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="PDFExtensions" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'PDFExtensions' could be made final; it is only initialized in the declaration or constructor.
 </violation>
-<violation beginline="53" endline="53" begincolumn="10" endcolumn="67" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
+<violation beginline="53" endline="53" begincolumn="10" endcolumn="66" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
 Field comments are required
 </violation>
-<violation beginline="53" endline="53" begincolumn="26" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="rawSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="53" endline="53" begincolumn="25" endcolumn="36" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="rawSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
 <violation beginline="55" endline="55" begincolumn="10" endcolumn="45" rule="CommentRequired" ruleset="Documentation" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_documentation.html#commentrequired" priority="3">
