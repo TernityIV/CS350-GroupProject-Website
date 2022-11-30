@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -270,15 +270,14 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(edu.odu.cs.cs350.acmClassifier.TextDocument)">setDocument</a></span>&#8203;(<a href="TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a>&nbsp;doc)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveVocabulary()">saveVocabulary</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Sets the currently associated input document
-  used for training or otherwise.</div>
+<div class="block">Save the vocabulary for future use</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(java.lang.String)">setDocument</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;doc)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(edu.odu.cs.cs350.acmClassifier.TextDocument)">setDocument</a></span>&#8203;(<a href="TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a>&nbsp;doc)</code></th>
 <td class="colLast">
 <div class="block">Sets the currently associated input document
   used for training or otherwise.</div>
@@ -286,33 +285,41 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(java.lang.String)">setDocument</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;doc)</code></th>
+<td class="colLast">
+<div class="block">Sets the currently associated input document
+  used for training or otherwise.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrainingDataLocation(java.lang.String)">setTrainingDataLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets a new location for the training data file</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVocabulary(edu.odu.cs.cs350.acmClassifier.Vocabulary)">setVocabulary</a></span>&#8203;(<a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a>&nbsp;newVocabulary)</code></th>
 <td class="colLast">
 <div class="block">Sets a new vocabulary using a shallow copy</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVocabularyLocation(java.lang.String)">setVocabularyLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets a new location for the vocabulary file</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Overrides default toString function for more useful printing.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
 <td class="colLast">
@@ -320,7 +327,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
  Uses an already associated text document, setting its labels</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String,java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation,
      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
@@ -329,21 +336,21 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
  Should be called by the train script at the command line</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateVocabulary()">updateVocabulary</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Update the vocabulary of the learning machine with any new words encountered in a document</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write()">write</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(java.lang.String)">write</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
 <td class="colLast">
@@ -595,6 +602,16 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></code></dd>
 </dl>
+</li>
+</ul>
+<a id="saveVocabulary()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>saveVocabulary</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;saveVocabulary()</pre>
+<div class="block">Save the vocabulary for future use</div>
 </li>
 </ul>
 <a id="deleteTraining()">
