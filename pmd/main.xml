@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-12-01T06:17:41.302">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-12-01T06:48:09.000">
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/DocumentSignature.java">
 <violation beginline="17" endline="354" begincolumn="56" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
 This class has too many methods, consider refactoring it.
@@ -243,8 +243,8 @@ Avoid unnecessary if..then..else statements when returning booleans
 <violation beginline="211" endline="219" begincolumn="5" endcolumn="80" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" variable="input" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
 Found 'DD'-anomaly for variable 'input' (lines '211'-'219').
 </violation>
-<violation beginline="211" endline="242" begincolumn="10" endcolumn="29" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" variable="input" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'input' (lines '211'-'242').
+<violation beginline="211" endline="243" begincolumn="10" endcolumn="29" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" variable="input" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'input' (lines '211'-'243').
 </violation>
 <violation beginline="215" endline="215" begincolumn="12" endcolumn="18" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" variable="DocRead" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this Scanner object are closed after use
@@ -261,37 +261,31 @@ Potential violation of Law of Demeter (method chain calls)
 <violation beginline="219" endline="219" begincolumn="13" endcolumn="80" rule="UseLocaleWithCaseConversions" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions" priority="3">
 When doing a String.toLowerCase()/toUpperCase() call, use a Locale
 </violation>
-<violation beginline="221" endline="221" begincolumn="9" endcolumn="19" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
-Use equals() to compare object references.
-</violation>
-<violation beginline="221" endline="221" begincolumn="9" endcolumn="19" rule="UseEqualsToCompareStrings" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#useequalstocomparestrings" priority="3">
-Use equals() to compare strings instead of '==' or '!='
-</violation>
-<violation beginline="229" endline="239" begincolumn="3" endcolumn="3" rule="EmptyIfStmt" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#emptyifstmt" priority="3">
+<violation beginline="230" endline="240" begincolumn="3" endcolumn="3" rule="EmptyIfStmt" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="read" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#emptyifstmt" priority="3">
 Avoid empty if statements
 </violation>
-<violation beginline="256" endline="256" begincolumn="17" endcolumn="34" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
+<violation beginline="257" endline="257" begincolumn="17" endcolumn="34" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
 Ensure you override both equals() and hashCode()
 </violation>
-<violation beginline="261" endline="261" begincolumn="26" endcolumn="48" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="262" endline="262" begincolumn="26" endcolumn="48" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="261" endline="261" begincolumn="71" endcolumn="90" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="262" endline="262" begincolumn="71" endcolumn="90" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="261" endline="261" begincolumn="110" endcolumn="126" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="262" endline="262" begincolumn="110" endcolumn="126" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="270" endline="273" begincolumn="4" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" variable="optionalLabels" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DD'-anomaly for variable 'optionalLabels' (lines '270'-'273').
+<violation beginline="271" endline="274" begincolumn="4" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" variable="optionalLabels" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'optionalLabels' (lines '271'-'274').
 </violation>
-<violation beginline="272" endline="272" begincolumn="9" endcolumn="20" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+<violation beginline="273" endline="273" begincolumn="9" endcolumn="20" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
 Use equals() to compare object references.
 </violation>
-<violation beginline="272" endline="272" begincolumn="9" endcolumn="20" rule="UseEqualsToCompareStrings" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#useequalstocomparestrings" priority="3">
+<violation beginline="273" endline="273" begincolumn="9" endcolumn="20" rule="UseEqualsToCompareStrings" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#useequalstocomparestrings" priority="3">
 Use equals() to compare strings instead of '==' or '!='
 </violation>
-<violation beginline="272" endline="272" begincolumn="9" endcolumn="20" rule="LogicInversion" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#logicinversion" priority="3">
+<violation beginline="273" endline="273" begincolumn="9" endcolumn="20" rule="LogicInversion" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="TextDocument" method="toString" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#logicinversion" priority="3">
 Use opposite operator instead of the logic complement operator.
 </violation>
 </file>
