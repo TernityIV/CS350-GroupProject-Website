@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,20 +190,34 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#classify(java.lang.String)">classify</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;documentLocation)</code></th>
+<td class="colLast">
+<div class="block">Classifies a document based on prior training data.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#delete()">delete</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Delete the associated data file and clear the associated learning machine.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumDocs()">getNumDocs</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the number of documents in a collection</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSVM()">getSVM</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the LearningMachine associated with this Librarian instance.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#main(java.lang.String%5B%5D)">main</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;args)</code></th>
 <td class="colLast">
@@ -211,7 +225,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
   to the command line interface</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#produceCategoryList(java.io.File)">produceCategoryList</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;document)</code></th>
 <td class="colLast">
@@ -220,7 +234,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
  has the same signature of)</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String,java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;inputDocument,
      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
@@ -346,15 +360,45 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
  has the same signature of)</div>
 </li>
 </ul>
+<a id="classify(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>classify</h4>
+<pre class="methodSignature">public final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;classify&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;documentLocation)</pre>
+<div class="block">Classifies a document based on prior training data.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>documentLocation</code> - The location of the document to be classified as a string.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A string of associated labels for the input document.</dd>
+</dl>
+</li>
+</ul>
 <a id="main(java.lang.String[])">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>main</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;main&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;args)</pre>
 <div class="block">Outputs the list of categories of a file 
   to the command line interface</div>
+</li>
+</ul>
+<a id="delete()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>delete</h4>
+<pre class="methodSignature">public final&nbsp;boolean&nbsp;delete()</pre>
+<div class="block">Delete the associated data file and clear the associated learning machine.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true iff the data file and learning machine were successfully deleted.</dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-11-30T16:54:14.155">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.48.0" timestamp="2022-12-01T00:49:51.986">
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/DocumentSignature.java">
 <violation beginline="17" endline="324" begincolumn="56" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="DocumentSignature" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
 This class has too many methods, consider refactoring it.
@@ -51,7 +51,7 @@ Ensure you override both equals() and hashCode()
 </violation>
 </file>
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/LearningMachine.java">
-<violation beginline="16" endline="485" begincolumn="54" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+<violation beginline="16" endline="508" begincolumn="54" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#toomanymethods" priority="3">
 This class has too many methods, consider refactoring it.
 </violation>
 <violation beginline="33" endline="33" begincolumn="23" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" variable="inputDocument" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
@@ -66,94 +66,91 @@ Found non-transient, non-static member. Please mark as transient or provide acce
 <violation beginline="71" endline="71" begincolumn="55" endcolumn="67" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" variable="savedTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="107" endline="107" begincolumn="5" endcolumn="18" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+<violation beginline="106" endline="106" begincolumn="5" endcolumn="18" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
 Overridable method 'readTraining' called during object construction
 </violation>
-<violation beginline="117" endline="117" begincolumn="5" endcolumn="11" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
+<violation beginline="116" endline="116" begincolumn="5" endcolumn="11" rule="ConstructorCallsOverridableMethod" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="LearningMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#constructorcallsoverridablemethod" priority="1">
 Overridable method 'write' called during object construction
 </violation>
-<violation beginline="246" endline="246" begincolumn="20" endcolumn="26" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="outFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="269" endline="269" begincolumn="20" endcolumn="26" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="outFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileOutputStream object are closed after use
 </violation>
-<violation beginline="247" endline="247" begincolumn="22" endcolumn="33" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="savedMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="270" endline="270" begincolumn="22" endcolumn="33" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="savedMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileOutputStream object are closed after use
 </violation>
-<violation beginline="263" endline="263" begincolumn="20" endcolumn="26" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="outFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="286" endline="286" begincolumn="20" endcolumn="26" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="outFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileOutputStream object are closed after use
 </violation>
-<violation beginline="264" endline="264" begincolumn="22" endcolumn="33" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="savedMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="287" endline="287" begincolumn="22" endcolumn="33" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="write" variable="savedMachine" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileOutputStream object are closed after use
 </violation>
-<violation beginline="282" endline="282" begincolumn="47" endcolumn="63" rule="AvoidUncheckedExceptionsInSignatures" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="deleteTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures" priority="3">
+<violation beginline="305" endline="305" begincolumn="47" endcolumn="63" rule="AvoidUncheckedExceptionsInSignatures" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="deleteTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures" priority="3">
 A method or constructor should not explicitly declare unchecked exceptions in its 'throws' clause
 </violation>
-<violation beginline="300" endline="300" begincolumn="66" endcolumn="82" rule="AvoidUncheckedExceptionsInSignatures" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="deleteTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures" priority="3">
+<violation beginline="323" endline="323" begincolumn="66" endcolumn="82" rule="AvoidUncheckedExceptionsInSignatures" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="deleteTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#avoiduncheckedexceptionsinsignatures" priority="3">
 A method or constructor should not explicitly declare unchecked exceptions in its 'throws' clause
 </violation>
-<violation beginline="328" endline="328" begincolumn="19" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="inFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="351" endline="351" begincolumn="19" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="inFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileInputStream object are closed after use
 </violation>
-<violation beginline="329" endline="329" begincolumn="21" endcolumn="22" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="in" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="352" endline="352" begincolumn="21" endcolumn="22" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="in" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileInputStream object are closed after use
 </violation>
-<violation beginline="333" endline="333" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="356" endline="356" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="334" endline="334" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="357" endline="357" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="335" endline="335" begincolumn="24" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="358" endline="358" begincolumn="24" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="336" endline="336" begincolumn="11" endcolumn="38" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="359" endline="359" begincolumn="11" endcolumn="38" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="359" endline="359" begincolumn="19" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="inFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="382" endline="382" begincolumn="19" endcolumn="24" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="inFile" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileInputStream object are closed after use
 </violation>
-<violation beginline="360" endline="360" begincolumn="21" endcolumn="22" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="in" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+<violation beginline="383" endline="383" begincolumn="21" endcolumn="22" rule="CloseResource" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" variable="in" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
 Ensure that resources like this FileInputStream object are closed after use
 </violation>
-<violation beginline="364" endline="364" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="387" endline="387" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="365" endline="365" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="388" endline="388" begincolumn="19" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="366" endline="366" begincolumn="24" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="389" endline="389" begincolumn="24" endcolumn="53" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="367" endline="367" begincolumn="11" endcolumn="38" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="390" endline="390" begincolumn="11" endcolumn="38" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="readTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="389" endline="391" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="addTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="412" endline="414" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="addTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="389" endline="391" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="addTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="412" endline="414" begincolumn="3" endcolumn="4" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="addTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="396" endline="396" begincolumn="4" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="addTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="419" endline="419" begincolumn="4" endcolumn="59" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="addTraining" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (method chain calls)
 </violation>
-<violation beginline="456" endline="456" begincolumn="17" endcolumn="34" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
+<violation beginline="479" endline="479" begincolumn="17" endcolumn="34" rule="OverrideBothEqualsAndHashcode" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#overridebothequalsandhashcode" priority="3">
 Ensure you override both equals() and hashCode()
 </violation>
-<violation beginline="461" endline="461" begincolumn="31" endcolumn="49" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="484" endline="484" begincolumn="31" endcolumn="49" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
-<violation beginline="478" endline="478" begincolumn="34" endcolumn="63" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="updateVocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+<violation beginline="501" endline="501" begincolumn="34" endcolumn="63" rule="LawOfDemeter" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="LearningMachine" method="updateVocabulary" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/Librarian.java">
-<violation beginline="33" endline="33" begincolumn="39" endcolumn="41" rule="ImmutableField" ruleset="Design" package="edu.odu.cs.cs350.acmClassifier" class="Librarian" variable="SVM" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_design.html#immutablefield" priority="3">
-Private field 'SVM' could be made final; it is only initialized in the declaration or constructor.
-</violation>
 <violation beginline="38" endline="38" begincolumn="42" endcolumn="52" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Librarian" variable="categoryMap" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="158" endline="173" begincolumn="16" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Librarian" method="main" variable="lib" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'lib' (lines '158'-'173').
+<violation beginline="193" endline="208" begincolumn="16" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="edu.odu.cs.cs350.acmClassifier" class="Librarian" method="main" variable="lib" externalInfoUrl="https://pmd.github.io/pmd-6.48.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'lib' (lines '193'-'208').
 </violation>
 </file>
 <file name="/home/runner/work/CS350-GroupProject/CS350-GroupProject/project/src/main/java/edu/odu/cs/cs350/acmClassifier/StopWords.java">

@@ -91,7 +91,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </nav>
 </header>
 <main role="main">
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a><a id="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a><a id="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -113,11 +113,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">addToVocabulary() - Adds a word to the dictionary.</div>
 </dd>
 </dl>
+<a id="I:C">
+<!--   -->
+</a>
+<h2 class="title">C</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#classify(java.lang.String)">classify(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
+<dd>
+<div class="block">Classifies a document based on prior training data.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#clear()">clear()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
+<dd>
+<div class="block">Clear all contents from the associated data structure and sets associated private members to their defaults.</div>
+</dd>
+</dl>
 <a id="I:D">
 <!--   -->
 </a>
 <h2 class="title">D</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#delete()">delete()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
+<dd>
+<div class="block">Delete the associated data file and clear the associated learning machine.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#deleteTraining()">deleteTraining()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
 <div class="block">Deletes the associated training file if it exists.</div>
@@ -183,6 +201,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Gets the total number of times that the word appears in the document.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#getDataLocation()">getDataLocation()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
+<dd>
+<div class="block">Returns the currently assigned training data file location.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#getDictionary()">getDictionary()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
 <dd>
 <div class="block">Used to retrieve the words already available in the vocabulary.</div>
@@ -190,10 +212,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#getDocument()">getDocument()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
 <div class="block">Return the associated text document</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#getFileLocation()">getFileLocation()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
-<dd>
-<div class="block">Gets the current file location</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#getFileLocation()">getFileLocation()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
 <dd>&nbsp;</dd>
@@ -553,7 +571,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
+<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<br><a href="allclasses-index.html">All&nbsp;Classes</a>&nbsp;<a href="allpackages-index.html">All&nbsp;Packages</a></div>
 </main>
 <footer role="contentinfo">
 <nav role="navigation">

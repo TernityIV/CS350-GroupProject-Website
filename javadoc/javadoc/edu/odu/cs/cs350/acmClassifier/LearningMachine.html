@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -199,90 +199,97 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear()">clear</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Clear all contents from the associated data structure and sets associated private members to their defaults.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deleteTraining()">deleteTraining</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Deletes the associated training file if it exists.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deleteTraining(java.lang.String)">deleteTraining</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets the training data location to the one specified, then deletes the training file if it exists.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Compare two learning machines for equivalence</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDataLocation()">getDataLocation</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the currently assigned training data file location.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDocument()">getDocument</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the associated text document</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFileLocation()">getFileLocation</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Gets the current file location</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumDocs()">getNumDocs</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the number of documents in a learning machine</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSignature()">getSignature</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the associated document signature</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html?is-external=true" title="class or interface in java.util" class="externalLink">Queue</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html?is-external=true" title="class or interface in java.util" class="externalLink">SortedSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html?is-external=true" title="class or interface in java.lang" class="externalLink">Character</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTraining()">getTraining</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the associated saved training data for this learning machine</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVocabulary()">getVocabulary</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the associated vocabulary</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readTraining()">readTraining</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Reads the associated output training file (located at outputFileLocation).</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readTraining(java.lang.String)">readTraining</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
 <td class="colLast">
 <div class="block">Reads the associated output training file (located at outputFileLocation).</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveVocabulary()">saveVocabulary</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Save the vocabulary for future use</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(edu.odu.cs.cs350.acmClassifier.TextDocument)">setDocument</a></span>&#8203;(<a href="TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a>&nbsp;doc)</code></th>
 <td class="colLast">
@@ -290,7 +297,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
   used for training or otherwise.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDocument(java.lang.String)">setDocument</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;doc)</code></th>
 <td class="colLast">
@@ -298,35 +305,35 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
   used for training or otherwise.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrainingDataLocation(java.lang.String)">setTrainingDataLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets a new location for the training data file</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVocabulary(edu.odu.cs.cs350.acmClassifier.Vocabulary)">setVocabulary</a></span>&#8203;(<a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a>&nbsp;newVocabulary)</code></th>
 <td class="colLast">
 <div class="block">Sets a new vocabulary using a shallow copy</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVocabularyLocation(java.lang.String)">setVocabularyLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newLocation)</code></th>
 <td class="colLast">
 <div class="block">Sets a new location for the vocabulary file</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Overrides default toString function for more useful printing.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
 <td class="colLast">
@@ -334,7 +341,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
  Uses an already associated text document, setting its labels</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String,java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation,
      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
@@ -343,21 +350,21 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
  Should be called by the train script at the command line</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateVocabulary()">updateVocabulary</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Update the vocabulary of the learning machine with any new words encountered in a document</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write()">write</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Writes the learningMachine to the output file location, saving it so that it may be deserialized.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#write(java.lang.String)">write</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
 <td class="colLast">
@@ -465,14 +472,14 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </dl>
 </li>
 </ul>
-<a id="getFileLocation()">
+<a id="getDataLocation()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getFileLocation</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getFileLocation()</pre>
-<div class="block">Gets the current file location</div>
+<h4>getDataLocation</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getDataLocation()</pre>
+<div class="block">Returns the currently assigned training data file location.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>string containing the current file location</dd>
@@ -591,6 +598,17 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newVocabulary</code> - - New vocabulary for learningMachine</dd>
 </dl>
+</li>
+</ul>
+<a id="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre class="methodSignature">public final&nbsp;void&nbsp;clear()</pre>
+<div class="block">Clear all contents from the associated data structure and sets associated private members to their defaults.
+ Does not delete the associated data file or change its location.</div>
 </li>
 </ul>
 <a id="write()">
