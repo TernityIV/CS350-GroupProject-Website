@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -199,7 +199,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(java.lang.String)">add</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newWord)</code></th>
 <td class="colLast">
-<div class="block">Adds a new word to the documentSignature's wordVector</div>
+<div class="block">Adds a new word to the DocumentSignature.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -217,6 +217,13 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clear()">clear</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Clears the contents of the document signature.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#empty()">empty</a></span>()</code></th>
 <td class="colLast">
@@ -224,73 +231,80 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
         i.e.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;obj)</code></th>
 <td class="colLast">
 <div class="block">Compares two documentSignatures for equality.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(java.lang.String)">get</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;word)</code></th>
 <td class="colLast">
 <div class="block">Gets the total number of times that the word appears in the document.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html?is-external=true" title="class or interface in java.util" class="externalLink">Vector</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAll(java.util.Collection)">getAll</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;words)</code></th>
 <td class="colLast">
 <div class="block">Gets the total number of times that the word appears in the document.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html?is-external=true" title="class or interface in java.util" class="externalLink">Vector</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFrequencies()">getFrequencies</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the frequency of each word in the signature.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMapping()">getMapping</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the hash map signature.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalFrequency()">getTotalFrequency</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Used to retrieve total number of words in document signature</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVocabulary()">getVocabulary</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the associated vocabulary of known words</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html?is-external=true" title="class or interface in java.util" class="externalLink">Vector</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWeights()">getWeights</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html?is-external=true" title="class or interface in java.util" class="externalLink">SortedSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWords()">getWords</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the words in the signature.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Overrides the hashCode method.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#incorporateVocabulary(edu.odu.cs.cs350.acmClassifier.Vocabulary)">incorporateVocabulary</a></span>&#8203;(<a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a>&nbsp;vocabulary)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeStopWords()">removeStopWords</a></span>()</code></th>
 <td class="colLast">
@@ -298,7 +312,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
   associated common words list.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.lang.String,double)">set</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;word,
    double&nbsp;count)</code></th>
@@ -306,18 +320,25 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <div class="block">Manually set the word count of a word</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAll(edu.odu.cs.cs350.acmClassifier.Vocabulary)">setAll</a></span>&#8203;(<a href="Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a>&nbsp;newVocab)</code></th>
 <td class="colLast">
 <div class="block">Set the words in the vocabulary to the map.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAll(java.util.Map)">setAll</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;&nbsp;newCounts)</code></th>
 <td class="colLast">
 <div class="block">Manually set the word count of many words at once</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the word frequency mapping as a string using the toString method of the HashMap.</div>
 </td>
 </tr>
 </table>
@@ -326,7 +347,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></h3>
-<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
+<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang" class="externalLink">clone</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang" class="externalLink">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang" class="externalLink">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang" class="externalLink">notify</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang" class="externalLink">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang" class="externalLink">wait</a>, <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#wait(long,int)" title="class or interface in java.lang" class="externalLink">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -542,7 +563,8 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <li class="blockList">
 <h4>add</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;add&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;newWord)</pre>
-<div class="block">Adds a new word to the documentSignature's wordVector</div>
+<div class="block">Adds a new word to the DocumentSignature.
+ If the word is already in the signature, adds to its frequency.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newWord</code> - word to be added to the wordVector</dd>
@@ -621,10 +643,26 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 </dl>
 </li>
 </ul>
+<a id="toString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre class="methodSignature">public final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;toString()</pre>
+<div class="block">Returns the word frequency mapping as a string using the toString method of the HashMap.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The word frequency mapping as a string.</dd>
+</dl>
+</li>
+</ul>
 <a id="empty()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>empty</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;empty()</pre>
@@ -634,6 +672,35 @@ implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true iff empty</dd>
 </dl>
+</li>
+</ul>
+<a id="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
+<div class="block">Overrides the hashCode method.
+ Provides unique hash codes for unique signatures.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang" class="externalLink">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An integer hash code.</dd>
+</dl>
+</li>
+</ul>
+<a id="clear()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>clear</h4>
+<pre class="methodSignature">public final&nbsp;void&nbsp;clear()</pre>
+<div class="block">Clears the contents of the document signature.
+ <br>
+ Does not clear the associated vocabulary.</div>
 </li>
 </ul>
 </li>

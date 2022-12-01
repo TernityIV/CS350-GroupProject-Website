@@ -157,18 +157,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </li>
 <li class="blockList">
 <h4>savedTraining</h4>
-<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html?is-external=true" title="class or interface in java.util" class="externalLink">Queue</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt;,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html?is-external=true" title="class or interface in java.util" class="externalLink">SortedSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html?is-external=true" title="class or interface in java.lang" class="externalLink">Character</a>&gt;&gt; savedTraining</pre>
-<div class="block">Contains pairings of document signatures and labels from the training data file.
- 
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html?is-external=true" title="class or interface in java.util" class="externalLink">SortedSet</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html?is-external=true" title="class or interface in java.lang" class="externalLink">Character</a>&gt;&gt; savedTraining</pre>
+<div class="block">Contains pairings of document signatures and labels.
+ <p>
  savedTraining contains a map of:
-  - (Key) The signature contained in the file in the form of numbers separated by spaces.
-  - (Value) The read label(s) at the end of the signature 
-     in the form of a sorted set of characters,
-     each a label associated with the signature.
-     
- A queue is ideal due to the FIFO setup being ideal for file reading,
-  and it won't contain any data other than the signature numbers in the order they appear
- A sorted set of characters is used to automatically alphabetize and remove duplicates</div>
+  <br>
+  - (Key) [DocumentSignature] The signature contained in the file.
+  <br>
+  - (Value) [SortedSet (Character)] The labels associated with the signature key.
+ <p>
+ A sorted set of characters is used to automatically alphabetize and remove duplicates
+  from the set of labels.</div>
 </li>
 <li class="blockListLast">
 <h4>vocab</h4>
