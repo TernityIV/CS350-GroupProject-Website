@@ -1,4 +1,11 @@
 /*
+* Website generation javascript for csv files
+* The following code is based upon
+*  code authored by Steven J. Zeil
+*  Begin quoted code
+*/
+
+/*
  * Register a div in the webpage as a HighCharts (http://www.highcharts.com/) chart
  * portraying a series of data in a CSV file
  */
@@ -105,3 +112,7 @@ function register2(graphName, csvURL, title, yAxisTitle) {
 		});
 	});	
 }
+
+/*
+* End quoted code
+*/

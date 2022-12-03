@@ -1,3 +1,9 @@
+/*
+ Website style sheet
+ The following code is based upon
+  code authored by Steven J. Zeil
+ Begin quoted code
+*/
 div.graph {
     display: block;
     background-color: #C0C0C0;
@@ -23,3 +29,6 @@ div.reportGraphs {
     flex-wrap: wrap;
     flex: 1 0 auto;
 }
+/*
+End quoted code
+*/
