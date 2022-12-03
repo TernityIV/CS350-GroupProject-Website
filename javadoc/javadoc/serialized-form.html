@@ -113,6 +113,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h3>Serialized Fields</h3>
 <ul class="blockList">
 <li class="blockList">
+<h4>normalizedFrequency</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt; normalizedFrequency</pre>
+<div class="block">A hash map containing the words of the signature and their normalized frequency
+ Map: 
+  - (Key) the word itself 
+  - (Value) a 1.0 or 0.0 denoting the normalized frequency of the word</div>
+</li>
+<li class="blockList">
 <h4>vocab</h4>
 <pre><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a> vocab</pre>
 <div class="block">Vocabulary holds a set of all know words
@@ -202,6 +210,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Contains an array of acceptable ASCII file extensions</div>
 </li>
 <li class="blockList">
+<h4>heavyDictionary</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt; heavyDictionary</pre>
+</li>
+<li class="blockList">
 <h4>labels</h4>
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> labels</pre>
 <div class="block">Contains a string of single-character labels</div>
@@ -210,6 +222,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>location</h4>
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> location</pre>
 <div class="block">Contains the input file location</div>
+</li>
+<li class="blockList">
+<h4>normalizedSignature</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html?is-external=true" title="class or interface in java.util" class="externalLink">HashMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt; normalizedSignature</pre>
 </li>
 <li class="blockList">
 <h4>PDFExtensions</h4>
@@ -223,10 +239,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>rawSignature</h4>
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html?is-external=true" title="class or interface in java.util" class="externalLink">Vector</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt; rawSignature</pre>
 </li>
-<li class="blockListLast">
+<li class="blockList">
 <h4>signature</h4>
 <pre><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a> signature</pre>
 <div class="block">Contains the document signature of the document</div>
+</li>
+<li class="blockListLast">
+<h4>weightedSignature</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html?is-external=true" title="class or interface in java.util" class="externalLink">Vector</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true" title="class or interface in java.lang" class="externalLink">Double</a>&gt; weightedSignature</pre>
 </li>
 </ul>
 </li>

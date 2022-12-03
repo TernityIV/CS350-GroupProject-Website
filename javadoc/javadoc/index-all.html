@@ -227,6 +227,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Gets the frequency of each word in the signature.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#getHeavyDictionary()">getHeavyDictionary()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
+<dd>
+<div class="block">Return the weighted dictionary of the learned data</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#getLabels()">getLabels()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/StopWords.html#getList()">getList()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/StopWords.html" title="class in edu.odu.cs.cs350.acmClassifier">StopWords</a></dt>
@@ -237,6 +241,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Gets the hash map signature.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getNormalizedFrequency()">getNormalizedFrequency()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#getNumDocs()">getNumDocs()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
 <div class="block">Return the number of documents in a learning machine</div>
@@ -283,10 +289,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Return the weight of a word</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getWeights()">getWeights()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
-<dd>
-<div class="block">Used to retrieve the weights of all the words in the signature</div>
-</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#getWeightedSignature()">getWeightedSignature()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getWords()">getWords()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
 <dd>
 <div class="block">Gets the words in the signature.</div>
@@ -468,9 +472,17 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Create a weighted dictionary from the vocabulary and document signatures</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#setHeavyDictionary(java.util.HashMap)">setHeavyDictionary(HashMap&lt;String, Double&gt;)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html#setLabels(java.lang.String)">setLabels(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/TextDocument.html" title="class in edu.odu.cs.cs350.acmClassifier">TextDocument</a></dt>
 <dd>
 <div class="block">Sets the current labels to the provided ones</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#setNormalizedFrequency()">setNormalizedFrequency()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
+<dd>
+<div class="block">Normalize the signature by populating the normalizedFrequency hashmap 
+ 0.0 denotes the word appears less than 5 times in a document 
+ 1.0 denotes the word appears at LEAST 5 times in a document</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#setTrainingDataLocation(java.lang.String)">setTrainingDataLocation(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
