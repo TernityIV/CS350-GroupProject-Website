@@ -148,6 +148,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Sets the training data location to the one specified, then deletes the training file if it exists.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#demo(java.lang.String)">demo(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
+<dd>
+<div class="block">Provides a demo of expected output based on already classified PDF documents.</div>
+</dd>
 <dt><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier"><span class="typeNameLink">DocumentSignature</span></a> - Class in <a href="edu/odu/cs/cs350/acmClassifier/package-summary.html">edu.odu.cs.cs350.acmClassifier</a></dt>
 <dd>
 <div class="block">Stores data from a text document
@@ -204,6 +208,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html#getAll(java.util.Collection)">getAll(Collection&lt;String&gt;)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/DocumentSignature.html" title="class in edu.odu.cs.cs350.acmClassifier">DocumentSignature</a></dt>
 <dd>
 <div class="block">Gets the total number of times that the word appears in the document.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#getCategoryMap()">getCategoryMap()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
+<dd>
+<div class="block">Returns the category map associated with this Librarian.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#getDataLocation()">getDataLocation()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
@@ -356,10 +364,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#%3Cinit%3E()">Librarian()</a></span> - Constructor for class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
 <dd>
-<div class="block">Finds if a document is in any
- other category than the parent folder
- by going through each of the category folders to see 
- is the users file is in another folder</div>
+<div class="block">Empty constructor.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#%3Cinit%3E(java.lang.String)">Librarian(String)</a></span> - Constructor for class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
 <dd>
@@ -399,7 +404,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html#print()">print()</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Vocabulary.html" title="class in edu.odu.cs.cs350.acmClassifier">Vocabulary</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#produceCategoryList(java.io.File)">produceCategoryList(File)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
+<dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#produceCategoryList(java.lang.String)">produceCategoryList(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
 <dd>
 <div class="block">Outputs the parent folder of a 
  file (outputs the first category that a document 
@@ -489,7 +494,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Sets a new location for the training data file</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/Librarian.html#setTrainingLocation(java.lang.String)">setTrainingLocation(String)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/Librarian.html" title="class in edu.odu.cs.cs350.acmClassifier">Librarian</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Sets the location of the training data for this Librarian to the specified location.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html#setVocabulary(edu.odu.cs.cs350.acmClassifier.Vocabulary)">setVocabulary(Vocabulary)</a></span> - Method in class edu.odu.cs.cs350.acmClassifier.<a href="edu/odu/cs/cs350/acmClassifier/LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></dt>
 <dd>
 <div class="block">Sets a new vocabulary using a shallow copy</div>

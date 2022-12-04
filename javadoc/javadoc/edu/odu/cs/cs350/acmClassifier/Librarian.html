@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -159,10 +159,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">Librarian</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Finds if a document is in any
- other category than the parent folder
- by going through each of the category folders to see 
- is the users file is in another folder</div>
+<div class="block">Empty constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -204,27 +201,41 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#demo(java.lang.String)">demo</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;demoFolderPath)</code></th>
+<td class="colLast">
+<div class="block">Provides a demo of expected output based on already classified PDF documents.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCategoryMap()">getCategoryMap</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Returns the category map associated with this Librarian.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNumDocs()">getNumDocs</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the number of documents in a collection</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="LearningMachine.html" title="class in edu.odu.cs.cs350.acmClassifier">LearningMachine</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSVM()">getSVM</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return the LearningMachine associated with this Librarian instance.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTrainingLocation()">getTrainingLocation</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Return where the training file is</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#main(java.lang.String%5B%5D)">main</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]&nbsp;args)</code></th>
 <td class="colLast">
@@ -232,21 +243,23 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
   to the command line interface</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#produceCategoryList(java.io.File)">produceCategoryList</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;document)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#produceCategoryList(java.lang.String)">produceCategoryList</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;document)</code></th>
 <td class="colLast">
 <div class="block">Outputs the parent folder of a 
  file (outputs the first category that a document 
  has the same signature of)</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrainingLocation(java.lang.String)">setTrainingLocation</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Sets the location of the training data for this Librarian to the specified location.</div>
+</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#train(java.lang.String,java.lang.String)">train</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;inputDocument,
      <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;labels)</code></th>
@@ -285,10 +298,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList">
 <h4>Librarian</h4>
 <pre>public&nbsp;Librarian()</pre>
-<div class="block">Finds if a document is in any
- other category than the parent folder
- by going through each of the category folders to see 
- is the users file is in another folder</div>
+<div class="block">Empty constructor.</div>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String)">
@@ -316,6 +326,38 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="demo(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>demo</h4>
+<pre class="methodSignature">public final&nbsp;void&nbsp;demo&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;demoFolderPath)</pre>
+<div class="block">Provides a demo of expected output based on already classified PDF documents.
+ Fills a map with file names and labels based on the folder and file names.
+ Those labels can be returned by the produceCategoryList method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>demoFolderPath</code> - The path to a directory containing labeled documents.</dd>
+</dl>
+</li>
+</ul>
+<a id="produceCategoryList(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>produceCategoryList</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;produceCategoryList&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;document)</pre>
+<div class="block">Outputs the parent folder of a 
+ file (outputs the first category that a document 
+ has the same signature of)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>document</code> - The file path to the document to return the category of.</dd>
+</dl>
+</li>
+</ul>
 <a id="getSVM()">
 <!--   -->
 </a>
@@ -358,6 +400,16 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </dl>
 </li>
 </ul>
+<a id="getCategoryMap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCategoryMap</h4>
+<pre class="methodSignature">public final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;getCategoryMap()</pre>
+<div class="block">Returns the category map associated with this Librarian.</div>
+</li>
+</ul>
 <a id="setTrainingLocation(java.lang.String)">
 <!--   -->
 </a>
@@ -365,6 +417,11 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <li class="blockList">
 <h4>setTrainingLocation</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setTrainingLocation&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileLocation)</pre>
+<div class="block">Sets the location of the training data for this Librarian to the specified location.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fileLocation</code> - The location of the training data.</dd>
+</dl>
 </li>
 </ul>
 <a id="train(java.lang.String,java.lang.String)">
@@ -381,18 +438,6 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <dd><code>inputDocument</code> - A document to be read for training.</dd>
 <dd><code>labels</code> - A set of input user labels to associate with the inputDocument.</dd>
 </dl>
-</li>
-</ul>
-<a id="produceCategoryList(java.io.File)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>produceCategoryList</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;produceCategoryList&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;document)</pre>
-<div class="block">Outputs the parent folder of a 
- file (outputs the first category that a document 
- has the same signature of)</div>
 </li>
 </ul>
 <a id="classify(java.lang.String)">
